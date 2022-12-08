@@ -137,7 +137,7 @@ h2.heading {
 /* Mobile */
 @media only screen and (max-width: 645px) {
     .form-style {
-        top: 495px;
+        top: 520px;
         padding-left: 20px;
         padding-right: 20px;
         width: 87%;
@@ -152,7 +152,7 @@ h2.heading {
         border-radius: 10px;
         margin-top: 50px;
         padding: 5px;
-        width: 200px;
+        width:100px;
         cursor: pointer;
     }
     
@@ -163,9 +163,9 @@ h2.heading {
         color: white; 
         border: 2px solid #182e35;
         border-radius: 10px;
-        margin-left: 10px;
         padding: 5px;
-        width: 200px;
+        margin-left: 30px;
+        width: 100px;
         cursor: pointer;
     }
 }

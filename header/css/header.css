@@ -93,7 +93,7 @@ header {
         border: 1px solid #343c44;
         background: transparent;
         background-color: #343c44;
-        background: url("../../images/search_icon.png") no-repeat 4px 4px;
+        background: url("../images/search_icon.png") no-repeat 4px 4px;
     }
 
     .search_txt::placeholder {
@@ -106,7 +106,7 @@ header {
 @media only screen and (max-width: 645px) {
     .grid_header {
         display: grid;
-        grid-template-columns: auto 200px auto;
+        grid-template-columns: auto 130px auto;
     }
 
     .headerMenu {
@@ -120,13 +120,13 @@ header {
         margin-top: 25px;
         text-align: center;
         color: white;
-        width: 190px;
+        width: 150px;
         border-radius: 20px;
         padding: 5px;
         border: 1px solid #343c44;
         background: transparent;
         background-color: #343c44;
-        background: url("../../images/search_icon.png") no-repeat 5px;
+        background: url("../images/search_icon.png") no-repeat 5px;
     }
 
     .search_txt::placeholder {
