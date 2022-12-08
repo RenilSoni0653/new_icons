@@ -331,7 +331,7 @@ h2.heading {
     position: absolute;
     transition: .1s ease-out;
     bottom: 5px;
-    left: 410px;
+    left: 300px;
   }
 
   .links {
@@ -365,20 +365,20 @@ h2.heading {
     border-radius: 10px;
     margin-top: 50px;
     padding: 5px;
-    width: 200px;
+    width:100px;
     cursor: pointer;
   }
-  
-  .cancel_btn {
+
+.cancel_btn {
     text-align: center;
     transition-duration: 0.4s;
     background-color: #182e35;
     color: white; 
     border: 2px solid #182e35;
     border-radius: 10px;
-    margin-left: 10px;
     padding: 5px;
-    width: 200px;
+    margin-left: 30px;
+    width: 100px;
     cursor: pointer;
   }
 }
