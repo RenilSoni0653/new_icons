@@ -103,14 +103,7 @@ table td button:hover{
         gap: 100px;
     }
     
-    .chart1{
-        padding: 2em;
-        border: 2px solid #f49131;
-        border-radius: 1rem;
-        background:#251c35;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-    }
-    .chart2{
+    .chart{
         padding: 2em;
         border: 2px solid #f49131;
         border-radius: 1rem;
@@ -181,16 +174,7 @@ table td button:hover{
         margin-top: 50px;
     }
 
-    .chart1 {
-        width: 200px;
-        padding: 20px;
-        border: 2px solid #f49131;
-        border-radius: 1rem;
-        background:#251c35;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
-    }
-
-    .chart2 {
+    .chart {
         width: 200px;
         padding: 20px;
         border: 2px solid #f49131;
