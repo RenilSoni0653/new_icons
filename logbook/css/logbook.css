@@ -1,0 +1,316 @@
+.grid-container{
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: auto auto auto auto; */
+    gap: 10px;
+    padding: 20px;
+}
+.logitem1{
+    grid-area: 1 / 1 / span 1 / span 2;
+    font-weight: bold;
+    /* background-color: aqua; */
+}
+.logmargleft{
+    margin-left: 2%;
+    font-weight: bold;
+}
+.logitem1 p{
+    font-size: 32px;
+    margin: 0% auto;
+}
+.grid-container img{
+    margin-left: 2%;
+    width: 70px;
+    float: left;
+}
+.grid-container>div{
+    padding: 10px 0;
+    color:#32523b;
+    background-color:#f8eeb4 ;
+}
+.subgrid{
+    font-weight: bold;
+    margin-left: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.subgrid div{
+    padding-bottom: 35px;
+}
+.logheads{
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logdisplay{
+  display: none;
+}
+
+/* <!-- HTML !-->
+<button class="button-40" role="button">Button 40</button> */
+
+/* CSS */
+.addNewLog {
+    float: right;
+    margin-top: -2%;
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    /* text-decoration-thickness: auto; */
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+.addNewLog:hover {
+  background-color: #374151;
+}
+
+.addNewLog:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#comment{
+    margin-left: 2%;
+}
+
+.commentbtn {
+    margin-top: -2%;
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    /* text-decoration-thickness: auto; */
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+}
+.commentbtn:hover {
+  background-color: #374151;
+}
+
+.commentbtn:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .addNewLog {
+    padding: .75rem 1.5rem;
+  }
+  .commentbtn{
+    padding: .75rem 1.5rem;
+  }
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  /* box-shadow: 1px 1px 2px rgba(0,0,0,0.125); */
+  border: 2px solid rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form{
+  width: 100%;
+}
+
+.inputfield{
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+label{ 
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 20px;
+}
+
+/*.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}  */
+
+
+

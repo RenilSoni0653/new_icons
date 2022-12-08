@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message</title>
+        <meta charset="utf-8">
+        
+        <link href="../../images/favicon_home.png" rel="shortcut icon">
+        
+        <!-- Messages css -->
+        <link rel="stylesheet" type="text/css" href="../messages/css/message__seen.css">
+
+        <!-- Message validate JS -->
+        <script src="../messages/JS/message_seen.js"></script>
+        
+        <!-- Main css -->
+        <link rel="stylesheet" type="text/css" href="../../tasks/lists/css/index.css">
+        
+        <!-- DataTables CSS -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+        
+        <!-- DataTables JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <!-- icon-css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- header css -->
+        <link rel="stylesheet" type="text/css" href="../../header/css/header.css">
+
+        <!-- Tinymce script -->
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        
+        <script>
+            $(document).ready( function () {
+                $('#myTable').DataTable({
+                    responsive: true
+                });
+            });
+        </script>
+        <script>
+          function openForm() {
+              document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("chat-input-id").innerHTML = " ";
+            document.getElementById("textarea-input-id").innerHTML = " ";
+            document.getElementById("myForm").style.display = "none";
+          }
+          function minForm() {
+              document.getElementById("myForm").style.marginBottom = "362px";
+          }
+      </script>
+    </head>
+    <body>
+        <!-- Header Section -->
+        
+        <header>
+            <div class="grid_header">
+                <div class="grid-hdr-item">
+                    <img src="../../images/logo.jpg" alt="PEWA" class="logo">
+                </div>
+                <div class="grid-hdr-item">
+                    <h1 class="mainHeading">PEWA</h1>
+                </div>
+                <div class="grid-hdr-search-item">
+                    <input type="text" class="search_txt" placeholder="Search..">
+                </div>
+            </div>
+        </header>
+
+    <form action="#" class="form-container">
+        <div class="chatbox-holder">
+          <div class="chatbox">
+            <div class="chatbox-top">
+              <div class="chatbox-avatar">
+                <a href="#"><img src="../../images/rs.webp" alt="Profile Picture"></a>
+              </div>
+              <div class="chat-partner-name">
+                <p>Nrup Patel</p>
+              </div>
+              <div class="chatbox-icons">
+                <a href="javascript:void(0);" onclick="window.location.href='../messages/index.html';"><i class="fa fa-angle-left">&nbsp;Back</i></a>       
+              </div>
+            </div>
+
+            <!-- Sender box -->
+            <div class="chat-messages">
+               <div class="message-box-holder">
+                <div class="message-box">
+                  Hello
+                </div>
+              </div>
+              
+              <!-- Receiver box -->
+              <div class="message-box-holder">
+                <div class="message-sender">
+                   Nrup patel
+                 </div>
+                <div class="message-box message-partner">
+                  Hi.
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-box">
+                  How are you doing?
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-sender">
+                   Nrup patel
+                 </div>
+                <div class="message-box message-partner">
+                  I'm doing fine. How about you?
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-box">
+                  I am fine.
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-box">
+                  Do you know why I knocked you today?
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-box">
+                  There's something important I would like to share with you. Do you have some time?
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-sender">
+                   Nrup patel
+                 </div>
+                <div class="message-box message-partner">
+                  Yeah sure. Let's meet in the Einstein cafe this evening and discuss the matter.
+                </div>
+              </div>
+              
+              <div class="message-box-holder">
+                <div class="message-sender">
+                   Nrup patel
+                 </div>
+                <div class="message-box message-partner">
+                  I thought of coming to your place and discuss about it but I had to finish my projects and I didn't have enough time to go out of the house.
+                </div>
+              </div>      
+            </div>
+            
+            <div class="chat-input-holder">
+              <textarea class="chat-input-txtarea" id="chat-input-txtarea"></textarea>
+              <input type="button" id="send" value="Send" class="message-send">
+            </div>
+            <div>
+                <span id="show_msg"></span>
+            </div>
+            <div class="attachment-panel">
+              <a href="#" class="fa fa-thumbs-up"></a>
+              <a href="#" class="fa fa-camera"></a>
+              <a href="#" class="fa fa-video-camera"></a>
+              <a href="#" class="fa fa-image"></a>
+              <a href="#" class="fa fa-paperclip"></a>
+              <a href="#" class="fa fa-link"></a>
+              <a href="#" class="fa fa-trash-o"></a>
+              <a href="#" class="fa fa-search"></a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </body>
+</html>

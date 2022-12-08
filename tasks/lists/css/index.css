@@ -1,0 +1,228 @@
+/* Main css */
+.lst_high_type_priority {
+  font-size: 14px;
+  background-color: red;
+  border-radius: 15px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.chat-input-txtarea {
+  border-radius: 10px;
+}
+
+.lst_medium_type_priority {
+  font-size: 14px;
+  background-color: rgb(209, 147, 99);
+  border-radius: 15px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.lst_low_type_priority {
+  font-size: 14px;
+  background-color: lightgreen;
+  border-radius: 15px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.links {
+  font-size: 15px;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.active {
+  color: #3498db;
+  font-size: 14px;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-radius: 20%;
+  border-bottom-color: #3498db;
+}
+
+.lst_add_tasks {
+  text-align: center;
+  transition-duration: 0.4s;
+  background-color: #008CBA;
+  color: white; 
+  border: 2px solid #008CBA;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.lst_add_tasks:hover {
+    background-color: white; 
+    color: black;
+}
+
+.header_tasks {
+  color: white;
+  font-size: 25px;
+}
+
+.header_links a {
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.header_links a:hover {
+  color: #3498db;
+  font-size: 14px;
+  top: 6px;
+  right: 0;
+  border: 5px solid transparent;
+  border-radius: 20%;
+  border-bottom-color: #3498db;
+}
+
+.lists {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  transition: .1s ease-out;
+}
+
+.lists-top {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  padding-left: 100px;
+  background: #343c44
+}
+
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+  position: absolute;
+  transition: .1s ease-out;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.lst_review {
+  text-align: left;
+}
+
+ul li {
+  text-align: left;
+}
+
+/* Mobile */
+@media only screen and (max-width: 645px) {
+  .header_tasks {
+    margin-left: -50px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    transition: .1s ease-out;
+    bottom: 5px;
+    left: 410px;
+  }
+
+  .lst_useful_info {
+    text-align: left;
+  }
+
+  #lst_myTable th, td {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  div.lst_dataTables_wrapper {
+    margin: 0 auto;
+  }
+  div.lst_container {
+    width: 80%;
+  }
+  .links {
+    display: none;
+    margin-right: 900px;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 647px) and (max-width:1007px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    transition: .1s ease-out;
+    bottom: 10px;
+    left: 15px;
+  }
+
+  #lst_myTable th, td {
+    text-align: left;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width:1008px) {
+  #lst_myTable th, td {
+    text-align: left;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    transition: .1s ease-out;
+    bottom: 10px;
+    left: 1305px;
+  }
+
+  .header_tasks {
+    margin-left: -80px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .links {
+    font-size: 15px;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+}

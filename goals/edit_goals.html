@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit goals</title>
+        <meta charset="utf-8">
+        <link href="../../images/favicon_home.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="../goals/css/edit_goals.css">
+
+        <!-- header css -->
+        <link rel="stylesheet" type="text/css" href="../../header/css/header.css">
+    </head>
+    <body>
+    <!-- Header Section -->
+    <header>
+        <div class="grid_header">
+            <div class="grid-hdr-item">
+                <img src="../../images/logo.jpg" alt="PEWA" class="logo">
+            </div>
+            <div class="grid-hdr-item">
+                <h1 class="mainHeading">PEWA</h1>
+            </div>
+            <div class="grid-hdr-search-item">
+                <input type="text" class="search_txt" placeholder="Search..">
+            </div>
+        </div>
+    </header>
+
+    <!-- Edit task div -->
+    <h2 class="heading">Edit Goals</h2>
+        <div class="form-style">
+            <div class="input-container">
+                <label id="entr_goal_desc">Goal Description: <sup>*</sup></label>
+                <input type="text" id="goal_desc" class="floatLabel" name="goal_desc">
+                <span id="show_goal"></span>
+            </div>
+
+            <div class="input-container">
+                <label id="entr_status" class="status">Status: <sup>*</sup></label>
+                <select class="floatLabel" name="status" id="status">
+                    <option value="">Select status</option>
+                    <option value="start">Start working</option>
+                    <option value="half">Half way</option>
+                    <option value="soon">Soon Complete</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <span id="show_status"></span>
+            </div>
+
+            <div class="btn-bottom">
+                <input type="button" class="submit_btn" id="submit" value="Update">
+                <input type="button" onclick="window.location.href='../goals/index.html';" class="cancel_btn" value="Cancel">
+            </div>
+
+            <div class="form_info"><p>* are mandatory fields.</p></div>
+        </div>
+
+        <script src="../goals/JS/goals_js.js"></script>
+    </body>
+</html>
