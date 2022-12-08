@@ -8,17 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-#search {
-    background-image: url('../images/search_icon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #343c44;
-    border-radius: 1rem;
-    margin-bottom: 12px;
-    width: 95.5%;
-}
-
 #projectList {
     display: flex;
     flex-direction: column;
@@ -101,6 +90,16 @@ body {
 
   /* Desktop */
 @media only screen and (min-width:1008px) {
+  #search {
+    background-image: url('../images/search_icon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #343c44;
+    border-radius: 1rem;
+    margin-bottom: 12px;
+    width: 95.5%;
+}
     .popup-inner {
         max-width: 700px;
         width: 90%;
@@ -117,6 +116,22 @@ body {
 
   /* Mobile */
 @media only screen and (max-width: 645px) {
+  #search {
+        margin-top: 25px;
+        text-align: center;
+        color: white;
+        width: 140px;
+        border-radius: 20px;
+        padding: 8px;
+        border: 1px solid #343c44;
+        background: transparent;
+        background-color: #343c44;
+        background: url("../../images/search_icon.png") no-repeat 2px;
+    }
+    .search_txt::placeholder {
+      color: white;
+      padding-left: 30px;
+  }
     .popup-inner {
         width: 70%;
         padding: 20px;
