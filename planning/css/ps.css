@@ -1,12 +1,12 @@
- *{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #d4bdde;
-}
+/* body{
+    background-color: white;
+} */
     /*display: flex;
     align-items: baseline;
     justify-content: center;
