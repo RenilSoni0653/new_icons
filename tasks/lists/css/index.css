@@ -147,7 +147,7 @@ ul li {
     position: absolute;
     transition: .1s ease-out;
     bottom: 5px;
-    left: 410px;
+    left: 300px;
   }
 
   .lst_useful_info {
@@ -173,6 +173,9 @@ ul li {
 
 /* tablet */
 @media only screen and (min-width: 647px) and (max-width:1007px) {
+  #lst_myTable {
+    width: 10%;
+  }
   /* .avatar {
     width: 60px;
     height: 60px;
@@ -207,7 +210,7 @@ ul li {
     position: absolute;
     transition: .1s ease-out;
     bottom: 5px;
-    left: 410px;
+    /* left: 410px; */
   }
 
   .lst_useful_info {

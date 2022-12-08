@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <title>My tasks</title>
-        <meta charset="utf-8">
-        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="../../images/favicon_home.png" rel="shortcut icon">
         
         <!-- Messages css -->
@@ -71,9 +72,6 @@
             <a href="#">Calendar </a>
             <a href="#" class="signout">Sign out</a>
         </div>
-
-
-        
 
         <div class="lists">
                 <div class="lists-top">
@@ -217,6 +215,10 @@
     <script>
         $(document).ready(function () {
             $('#lst_myTable').DataTable({
+                rowReorder: {
+                    selector: "td:nth-child(1)"
+                },
+                responsive: true,
                 data: tasksName,
                 columns: [
                     {title: 'No'},
