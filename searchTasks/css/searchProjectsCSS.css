@@ -118,12 +118,11 @@ body {
   /* Mobile */
 @media only screen and (max-width: 645px) {
     .popup-inner {
-        max-width: 400px;
-        width: 90%;
+        width: 70%;
         padding: 20px;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 195px;
         transform: translate(-50%, -50%);
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
         border-radius: 3px;
