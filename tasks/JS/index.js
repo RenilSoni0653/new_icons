@@ -41,6 +41,5 @@ function validateForm() {
 
 document.addEventListener('DOMContentLoaded', () => {
     $('#submit').addEventListener('click', validateForm);
-    $('#send').addEventListener('click', messageValidate);
     document.getElementById('tasks').focus();
 });
