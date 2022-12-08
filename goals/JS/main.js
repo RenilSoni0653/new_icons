@@ -5,25 +5,25 @@ var goalsName = [
         '1',
         'Have to do Sidebar section',
         '<progress value="60" max="100"> 60% </progress>    <span>60%</span>',
-        '<a href="/goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
+        '<a href="../goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
     ],
     [
         '2',
         'Manage Tasks Page',
         '<progress value="30" max="100"> 30% </progress>    <span>30%</span>',
-        '<a href="/goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
+        '<a href="../goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
     ],
     [
         '3',
         'Work on design',
         '<progress value="70" max="100"> 70% </progress>    <span>70%</span>',
-        '<a href="/goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
+        '<a href="../goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
     ],
     [
         '4',
         'Manage website traffic',
         '<progress value="50" max="100"> 50% </progress>    <span>50%</span>',
-        '<a href="/goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
+        '<a href="../goals/edit_goals.html"><i class="fa fa-edit"></i></a>  |   <i class="fa fa-trash"></i>'
     ],
     [
         '5',
