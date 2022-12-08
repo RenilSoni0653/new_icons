@@ -133,11 +133,11 @@ body {
       padding-left: 30px;
   }
     .popup-inner {
-        width: 70%;
+        width: 63%;
         padding: 20px;
         position: absolute;
         top: 50%;
-        left: 195px;
+        left: 190px;
         transform: translate(-50%, -50%);
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
         border-radius: 3px;
