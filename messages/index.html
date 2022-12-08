@@ -238,6 +238,14 @@
     <script>
         $(document).ready(function () {
             $('#myTable').DataTable({
+                deferRender:    true,
+                scrollY:        200,
+                scrollCollapse: true,
+                scroller:       true,
+                fixedHeader: {
+                    header: true,
+                    footer: true
+                },
                 data: msgsName,
                 columns: [
                     {title: 'No'},

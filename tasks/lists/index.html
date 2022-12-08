@@ -215,10 +215,14 @@
     <script>
         $(document).ready(function () {
             $('#lst_myTable').DataTable({
-                rowReorder: {
-                    selector: "td:nth-child(1)"
+                deferRender:    true,
+                scrollY:        200,
+                scrollCollapse: true,
+                scroller:       true,
+                fixedHeader: {
+                    header: true,
+                    footer: true
                 },
-                responsive: true,
                 data: tasksName,
                 columns: [
                     {title: 'No'},

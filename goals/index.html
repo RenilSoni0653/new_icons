@@ -218,6 +218,14 @@
     <script>
         $(document).ready(function () {
             $('#gls_myTable').DataTable({
+                deferRender:    true,
+                scrollY:        200,
+                scrollCollapse: true,
+                scroller:       true,
+                fixedHeader: {
+                    header: true,
+                    footer: true
+                },
                 data: goalsName,
                 columns: [
                     {title: 'No'},
