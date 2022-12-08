@@ -178,12 +178,11 @@ table td button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
         margin-top: 50px;
     }
 
     .chart1 {
-        width: 275px;
+        width: 200px;
         padding: 20px;
         border: 2px solid #f49131;
         border-radius: 1rem;
@@ -192,7 +191,7 @@ table td button:hover{
     }
 
     .chart2 {
-        width: 275px;
+        width: 200px;
         padding: 20px;
         border: 2px solid #f49131;
         border-radius: 1rem;
