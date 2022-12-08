@@ -173,7 +173,7 @@ ul li {
 
 /* tablet */
 @media only screen and (min-width: 647px) and (max-width:1007px) {
-  .avatar {
+  /* .avatar {
     width: 60px;
     height: 60px;
     overflow: hidden;
@@ -189,6 +189,45 @@ ul li {
 
   #lst_myTable th, td {
     text-align: left;
+  } */
+  .header_tasks {
+    margin-left: -50px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    transition: .1s ease-out;
+    bottom: 5px;
+    left: 410px;
+  }
+
+  .lst_useful_info {
+    text-align: left;
+  }
+
+  #lst_myTable th, td {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  div.lst_dataTables_wrapper {
+    margin: 0 auto;
+  }
+  div.lst_container {
+    width: 80%;
+  }
+  .links {
+    display: none;
+    margin-right: 900px;
   }
 }
 

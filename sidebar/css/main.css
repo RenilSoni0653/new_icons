@@ -56,7 +56,14 @@
 /* tablet */
 @media only screen and (min-width: 647px) and (max-width:1007px) {
     #side_nav {
-        display: none;
+        display: flex;
+        font-size:30px;
+        margin-left:-90px;
+        cursor:pointer;
+        margin-top: -6px;
+    }
+    #side_nav {
+        display: flex;
     }
 }
 
