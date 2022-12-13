@@ -20,6 +20,11 @@
     <!-- Dropdown css -->
     <link rel="stylesheet" type="text/css" href="../dropdown/css/main.css">
 
+    <!-- DataTables JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
     <!-- icon-css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -98,31 +103,34 @@
 
     <div class="main">
         <div class="content-body">
-            <!-- <h1>Planning and scheduling</h1> -->
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Task 1</th>
-                    <th>Task 2</th>
-                    <th>Task 3</th>
-                    <th>Task 4</th>
-                </tr>
-
-                <tr>
-                    <td class="table-dates">17-11-2022</td>
-                    <td>Board meeting <button type="button" value="1" onclick="showDetails(this)">More</button></td>
-                    <td>Meeting with client <button type="button" value="1" onclick="showDetails(this)">More</button></td>
-                    <td>Arrange laptop for new joinee <button type="button" value="1" onclick="showDetails(this)">More</button></td>
-                    <td>Improve security in login <button type="button" value="1" onclick="showDetails(this)">More</button></td>
-                </tr>
-                
-                <tr>
-                    <td class="table-dates">18-11-2022</td>
-                    <td>Board meeting <button type="button" value="0" onclick="showDetails(this)">More</button></td>
-                    <td>Meeting with client <button type="button" value="0" onclick="showDetails(this)">More</button></td>
-                    <td>Arrange laptop for new joinee <button type="button" value="0" onclick="showDetails(this)">More</button></td>
-                    <td>Improve security in login <button type="button" value="0" onclick="showDetails(this)">More</button></td>
-                </tr>
+            <!-- <table> -->
+                <table id="pln_myTable" data-role="table" data-mode="reflow" class="table-stripe table-stroke ui-responsive">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Task 1</th>
+                            <th>Task 2</th>
+                            <th>Task 3</th>
+                            <th>Task 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-dates">17-11-2022</td>
+                            <td>Board meeting <button type="button" value="1" onclick="showDetails(this)">More</button></td>
+                            <td>Meeting with client <button type="button" value="1" onclick="showDetails(this)">More</button></td>
+                            <td>Arrange laptop for new joinee <button type="button" value="1" onclick="showDetails(this)">More</button></td>
+                            <td>Improve security in login <button type="button" value="1" onclick="showDetails(this)">More</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="table-dates">18-11-2022</td>
+                            <td>Board meeting <button type="button" value="0" onclick="showDetails(this)">More</button></td>
+                            <td>Meeting with client <button type="button" value="0" onclick="showDetails(this)">More</button></td>
+                            <td>Arrange laptop for new joinee <button type="button" value="0" onclick="showDetails(this)">More</button></td>
+                            <td>Improve security in login <button type="button" value="0" onclick="showDetails(this)">More</button></td>
+                        </tr>
+                    </tbody>
             </table>
             <div class="container">
                 <div class="chart">
@@ -140,14 +148,6 @@
             <h2>Summary</h2>
             <p id="summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum necessitatibus nobis aspernatur cupiditate ex hic sapiente, dignissimos unde corrupti explicabo!</p>
         </div>
-        <!-- <div class="container">
-            <div class="chart">
-                <canvas id="barchart" width="300" height="300"></canvas>
-            </div>
-            <div class="chart">
-                <canvas id="doughnut" width="300" height="300"></canvas>
-            </div>
-        </div> -->
     </div>
 
     <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
@@ -249,6 +249,18 @@
 <script src="../planning/JS/ps.js"></script>
 
 <script>
+    $(document).ready(function () {
+            $('#pln_myTable').DataTable({
+                deferRender:    true,
+                scrollY:        400,
+                scrollCollapse: true,
+                scroller:       true,
+                fixedHeader: {
+                    header: true,
+                },
+                searching: false, paging: false, info: false
+            });
+    });
     function openForm() {
         document.getElementById("myForm").style.display = "block";
     }
