@@ -11,6 +11,9 @@
         <!-- header css -->
         <link rel="stylesheet" href="../header/css/header.css">
 
+        <!-- Messages css -->
+        <link rel="stylesheet" type="text/css" href="../messages/css/index.css">
+
         <!-- footer css -->
         <link rel="stylesheet" href="../footer/css/footer.css">
 
@@ -118,6 +121,69 @@
                 </div>
             </div>
         </div>
+
+        <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
+        <div class="chat-popup" id="myForm">
+          <form action="#" class="form-container">
+            <div class="chatbox-holder">
+              <div class="chatbox">
+                <div class="chatbox-top">
+                  <div class="chatbox-avatar">
+                    <a href="#"><img src="../images/rs.webp" alt="Profile Picture"></a>
+                  </div>
+                  <div class="chat-partner-name">
+                    <p>Renil Soni</p>
+                  </div>
+                  <div class="chatbox-icons">
+                    <a href="javascript:void(0);" onclick="minForm()"><i class="fa fa-minus"></i></a>
+                    <a href="javascript:void(0);" onclick="closeForm()"><i class="fa fa-close"></i></a>       
+                  </div>      
+                </div>
+  
+                <!-- Add subject box -->
+                <div class="chat-input-holder">
+                  <input type="text" id="chat-input-id" class="chat-input" placeholder="Add subject"><br>
+                </div>
+                <div>
+                    <span id="show_sub"></span>
+                </div>
+                
+                <!-- To box -->
+                <div class="chat-input-holder">
+                  <label class="to_input_label">To</label>
+                  <input type="text" id="textarea-input-id" class="chat-input" placeholder="Type the name of team member"><br>
+                </div>
+                <div>
+                    <span id="show_team"></span>
+                </div>
+                
+                <!-- Sender box -->
+                <div class="chat-messages">
+                   <!-- Code place here -->
+                </div>
+                
+                <div class="chat-input-holder">
+                  <textarea class="chat-input-txtarea" id="chat-input-txtarea"></textarea>
+                  <input type="button" id="send" value="Send" class="message-send">
+                </div>
+                <div>
+                    <span id="show_msg"></span>
+                </div>
+                <div class="attachment-panel">
+                  <a href="#" class="fa fa-thumbs-up"></a>
+                  <a href="#" class="fa fa-camera"></a>
+                  <a href="#" class="fa fa-video-camera"></a>
+                  <a href="#" class="fa fa-image"></a>
+                  <a href="#" class="fa fa-paperclip"></a>
+                  <a href="#" class="fa fa-link"></a>
+                  <a href="#" class="fa fa-trash-o"></a>
+                  <a href="#" class="fa fa-search"></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div> 
+
         <div class="footer-dark">
             <footer>
                 <div class="grid-container_ftr">
@@ -149,8 +215,31 @@
                 <p class="copyright">PEWA © 2022-23</p>
             </footer>
         </div>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("chat-input-txtarea").value = " ";
+                document.getElementById("chat-input-id").value = " ";
+                document.getElementById("textarea-input-id").value = " ";
+                document.getElementById("myForm").style.display = "none";
+            }
+    
+            function minForm() {
+                document.getElementById('myForm').style.cssText = 'margin-bottom: -100px;';
+            }
+        </script>
+    
         <!-- JavaScript for search projects -->
         <script src="./JS/searchProjectsJS.js"></script>
+
+        <!-- Message validate JS -->
+    <script src="../messages/JS/main.js"></script>
+
+    <!-- Sidebar JS -->
+    <script src="../sidebar/JS/main.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </div>
