@@ -21,6 +21,10 @@ function validateForm() {
     } else {
         $('#show_status').innerHTML = '';
     }
+
+    if(goal_desc.value != '' && status.value != '') {
+        window.location.href = "../tasks/lists/thank_page.html";
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

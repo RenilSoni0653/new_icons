@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My tasks</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="../../images/favicon_home.png" rel="shortcut icon">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PEWA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../images/favicon_home.png" rel="shortcut icon">
         
+        <!-- header css -->
+        <link rel="stylesheet" type="text/css" href="../header/css/header.css">
+
         <!-- Messages css -->
-        <link rel="stylesheet" type="text/css" href="../../messages/css/index.css">
-        
+        <link rel="stylesheet" type="text/css" href="../messages/css/index.css">
+
+        <!-- footer css -->
+        <link rel="stylesheet" type="text/css" href="../footer/css/footer.css">
+
+        <!-- search Project css -->
+        <link rel="stylesheet" type="text/css" href="../sprintPlan/styles/sprintPlan.css">
+
         <!-- Main css -->
-        <link rel="stylesheet" type="text/css" href="../lists/css/index.css">
+        <link rel="stylesheet" type="text/css" href="../tasks/lists/css/index.css">
 
         <!-- Sidebar css -->
-        <link rel="stylesheet" type="text/css" href="../../sidebar/css/main.css">
-        
-        <!-- DataTables CSS -->
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
-        
-        <!-- DataTables JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="../sidebar/css/main.css">
 
         <!-- icon-css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- header css -->
-        <link rel="stylesheet" type="text/css" href="../../header/css/header.css">
-
-        <!-- Footer css -->
-        <link rel="stylesheet" type="text/css" href="../../footer/css/footer.css">
-
         <!-- Dropdown css -->
-        <link rel="stylesheet" type="text/css" href="../../dropdown/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../dropdown/css/main.css">
+
+        <!-- Jquery cdn -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     </head>
+
     <body>
-        <!-- Header Section -->
+
+        <!-- <header>
+            <img src="../images/logo.jpg" alt="PEWA" class="logo">
+            <div class="mainHeader">
+                <h1 class="mainHeading">PEWA</h1>
+            </div>
+            <div>
+                <nav>
+                    <div class="headerMenu">
+                        <a href="#" class="headerMenuItem">Overview</a>
+                        <a href="#" class="headerMenuItem">List</a>
+                        <a href="#" class="headerMenuItem headerMenuItem_visited">Board</a>
+                        <a href="#" class="headerMenuItem">Timeline</a>
+                        <a href="#" class="headerMenuItem">Calender</a>
+                        <a href="#" class="headerMenuItem">Dashboard</a>
+                        <a href="#" class="headerMenuItem">Messages</a>
+                        <a href="#" class="headerMenuItem">More...</a>
+                        <div class="push search"><img alt="PEWA" src="../images/search_icon.png"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <br> -->
+
         <header>
             <div class="grid_header">
                 <div class="grid-hdr-item">
@@ -62,13 +85,13 @@
                 </div>
             </div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../lists/index.html" class="active">Tasks</a>
+            <a href="../tasks/lists/index.html">Tasks</a>
             <a href="../../goals/index.html">Goals </a>
             <a href="../../messages/index.html">Inbox </a>
             <a href="../../planning/PlanandSchedule.html">Planning </a>
             <a href="../../logbook/logbook.html">Logs </a>
             <a href="../../task_priority/task.html">Allocations </a>
-            <a href="../../sprintPlan/sprintPlan.html">Work Sprints </a>
+            <a href="./sprintPlan.html" class="active">Work Sprints </a>
             <a href="../../searchTasks/search_project.html">Search </a>
             <a href="#">Calendar </a>
             <a href="#" class="signout">Sign out</a>
@@ -85,11 +108,11 @@
                     </div>
                     
                     <div class="header_tasks">
-                        <span>My Tasks</span>
+                        <span>Work Sprints</span>
                     <div>
                             
                     <ul class="links">
-                        <li class="header_links"><a href="../lists/index.html" class="active">Tasks</a></li>
+                        <li class="header_links"><a href="../tasks/lists/index.html" >Tasks</a></li>
                         <li class="header_links"><a href="../../goals/index.html">Goals </a></li>
                         <li class="header_links"><a href="../../messages/index.html">Inbox </a></li>
                         <li>
@@ -99,7 +122,7 @@
                                     <a href="../../planning/PlanandSchedule.html">Planning </a>
                                     <a href="../../logbook/logbook.html">Logs </a>
                                     <a href="../../task_priority/task.html">Allocations </a>
-                                    <a href="../../sprintPlan/sprintPlan.html">Work Sprints </a>
+                                    <a href="./sprintPlan.html" class="active">Work Sprints </a>
                                     <a href="../../searchTasks/search_project.html">Search Project </a>
                                     <a href="#">Calendar </a>
                                 </div>
@@ -108,16 +131,51 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div><br><br>
+        <main>
+            <div class="subHeading">
+                <div class="box">
+                    <p class="taskStatus">Backlog</p>
+                    <div class="addTask">
+                        <a href="javascript:changeIcon();"><i class="fa fa-plus icon" aria-hidden="true"></i></a>
+                    </div>
 
-        <div class="lst_btn_add_task">
-            <input type="button" onclick="window.location.href='../add_task.html';" class="lst_add_tasks" value="&plus;" id="addTasks">
-        </div>
+                    <img src="./images/plus_icon.png" class="push" alt="new task">
+                    <img src="./images/more_icon.png" alt="more">
+                </div>
+                <div class="box">
+                    <p class="taskStatus">Ready</p>
+                    <img src="./images/plus_icon.png" class="push" alt="new task">
+                    <img src="./images/more_icon.png" alt="more">
+                </div>
+                <div class="box">
+                    <p class="taskStatus">In Progress</p>
+                    <img src="./images/plus_icon.png" class="push" alt="new task">
+                    <img src="./images/more_icon.png" alt="more">
+                </div>
+                <div class="box">
+                    <p class="taskStatus">Done</p>
+                    <img src="./images/plus_icon.png" class="push" alt="new task">
+                    <img src="./images/more_icon.png" alt="more">
+                </div>
+            </div>
+            <div class="subHeading">
+                <div class="task box">
+                    <p>Performance improvement</p>
+                </div>
+                <div class="task box">
+                    <p>Design Prototype</p>
+                </div>
+                <div class="task box">
+                    <p>Redesign overview</p>
+                </div>
+                <div class="task box">
+                    <p>Introduce new navigation</p>
+                </div>
+            </div>
+        </main>
 
-        <table id="lst_myTable" data-role="table" data-mode="reflow" class="table-stripe table-stroke ui-responsive"></table>
-    </div>
-
-    <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
+        <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
         <div class="chat-popup" id="myForm">
           <form action="#" class="form-container">
             <div class="chatbox-holder">
@@ -179,23 +237,20 @@
           </form>
         </div> 
 
-    <!-- Footer section
-        Remaining -->
-
         <div class="footer-dark">
             <footer>
                 <div class="grid-container_ftr">
                     <div class="grid-item_ftr">
-                        <p class="footer_info">Useful Info</p>
-                            <ul class="footer_info">
-                                <li><a href="#">Web design</a></li>
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Hosting</a></li>
-                            </ul>
+                        <p class="useful_info">Useful Info</p>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
                     </div>
 
                     <div class="grid-item_ftr">
-                        <p class="footer_info">Recent Posts</p>
+                        <p class="recent_posts">Recent Posts</p>
                         <ul>
                             <li><a href="#">Company</a></li>
                             <li><a href="#">Team</a></li>
@@ -203,39 +258,19 @@
                         </ul>
                     </div>
                     <div class="grid-item_ftr">
-                        <p class="footer_info">Review</p>
-                            <p class="footer_info">PEWA is an abbreviation of Project Estimation and Work Allocation. It is an online tool for Project Management. It combines all the features that are required to manage a project.</p>
+                        <p class="review">Review</p>
+                        <p class="review_txt">PEWA is an abbreviation of Project Estimation and Work Allocation. It
+                            is
+                            an online tool for Project Management. It combines all the features that are required to
+                            manage a project.</p>
                     </div>
                 </div>
                 <p class="copyright">PEWA © 2022-23</p>
             </footer>
         </div>
-    </body>
-
-    <script src="../lists/JS/main.js"></script>
+    </div>
 
     <script>
-        $(document).ready(function () {
-            $('#lst_myTable').DataTable({
-                deferRender:    true,
-                scrollY:        400,
-                scrollCollapse: true,
-                scroller:       true,
-                fixedHeader: {
-                    header: true,
-                },
-                data: tasksName,
-                columns: [
-                    {title: 'No'},
-                    {title: 'Name'},
-                    {title: 'Date'},
-                    {title: 'Project'},
-                    {title: 'Priority'},
-                    {title: 'Action'}
-                ]
-            });
-        });
-    
         function openForm() {
             document.getElementById("myForm").style.display = "block";
         }
@@ -252,9 +287,15 @@
         }
     </script>
 
+    <!-- JavaScript for search projects -->
+    <script src="../searchTasks/JS/searchProjectsJS.js"></script>
+
     <!-- Message validate JS -->
-    <script src="../../messages/JS/main.js"></script>
+    <script src="../messages/JS/main.js"></script>
 
     <!-- Sidebar JS -->
-    <script src="../../sidebar/JS/main.js"></script>
+    <script src="../sidebar/JS/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
 </html>

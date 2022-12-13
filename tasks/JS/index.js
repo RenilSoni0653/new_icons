@@ -37,6 +37,10 @@ function validateForm() {
     } else {
         $('#show_prj').innerHTML = '';
     }
+
+    if(tasks.value != '' && deadline.value != '' && project.value != '' && priority.value != '') {
+        window.location.href = "../tasks/lists/thank_page.html";
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
