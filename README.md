@@ -22,36 +22,32 @@
 - stackoverflow
 
 
-## Assignment Name: : Project Feature 2 Task Priorities
-
-
+## Assignment Name: : Project task lists
 
 ## Name: Rutwa Dave
-## Humber Id: n01551519
-
+## Student Number: N01551519
 
 ## Tasks
 
-
-
 - [x] Responsive Layout with  HTML and CSS for second project feature
-
-
-
-
+- [x] Layout with  HTML, CSS and javascript  for one of your project feature
 
 ## Challenges
 
-
 - While designing layout 
-
-
+- While writing javascript
 
 ## Resources
 
+- https://semicolon.dev/tutorial/css/flexbox-calendar
+
+- http://antoniak.in/blog/2017/04/05/flexbox-model-css-make-calendar/
+
+- https://www.tutorialspoint.com/javascript/javascript_dialog_boxes.htm
 
 -https://asana.com/
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
 
 
 ## Assignment Name: : Project task lists
