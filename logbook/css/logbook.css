@@ -162,7 +162,7 @@ label{
 @media only screen and (max-width: 645px) {
   .grid-container>div {
     margin-left: -18px;
-    padding: 30px;
+    padding: 28px;
   }
   #submit {
     margin-left: 100px;
