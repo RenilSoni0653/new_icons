@@ -163,6 +163,11 @@ i {
         padding: 1.5rem;
     }
 
+    .form {
+        margin-left: -50px;
+        width: 370px;
+    }
+
     form,
     .contact-info {
         padding: 1.7rem 1.6rem;
