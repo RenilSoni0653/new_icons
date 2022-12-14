@@ -186,23 +186,7 @@ ul li {
   #lst_myTable {
     width: 10%;
   }
-  /* .avatar {
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    border-radius: 50%;
-    background: white;
-    padding: 3px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
-    position: absolute;
-    transition: .1s ease-out;
-    bottom: 10px;
-    left: 15px;
-  }
 
-  #lst_myTable th, td {
-    text-align: left;
-  } */
   .header_tasks {
     margin-left: -50px;
     color: white;
@@ -220,7 +204,6 @@ ul li {
     position: absolute;
     transition: .1s ease-out;
     bottom: 5px;
-    /* left: 410px; */
   }
 
   .lst_useful_info {
