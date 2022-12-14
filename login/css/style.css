@@ -23,15 +23,6 @@ header{
     padding: 0.2rem;
 }
 
-#err1, #err2, #err3 {
-    margin-left: -180px;
-    color: red;
-}
-
-.frgtLink {
-    margin-top: 30px;
-}
-
 .img{
     display: flex;
     justify-content: flex-end;
@@ -182,16 +173,37 @@ a:hover{
     }
 }
 @media screen and (max-width: 900px){
+    #err1, #err2 {
+        margin-left: -100px;
+        color: red;
+    }
+    
+    .frgtLink {
+        margin-top: 30px;
+    }
     .img{
         display: none;
     }
     .container{
         grid-template-columns: 1fr;
     }
+
     .wave{
         display: none;
     }
     .login-container{
         justify-content: center;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width:1008px) {
+    #err1, #err2 {
+        margin-left: -180px;
+        color: red;
+    }
+    
+    .frgtLink {
+        margin-top: 30px;
     }
 }
