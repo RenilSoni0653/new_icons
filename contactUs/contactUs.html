@@ -4,86 +4,241 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PEWA</title>
+        <title>Contact us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../images/favicon_home.png" rel="shortcut icon">
         <!-- header css -->
         <link rel="stylesheet" type="text/css" href="../header/css/header.css">
 
+        <!-- Dropdown css -->
+        <link rel="stylesheet" type="text/css" href="../dropdown/css/main.css">
+
+        <!-- Sidebar css -->
+        <link rel="stylesheet" type="text/css" href="../sidebar/css/main.css">
+
+        <link rel="stylesheet" type="text/css" href="../tasks/lists/css/index.css">
+
         <!-- footer css -->
         <link rel="stylesheet" type="text/css" href="../footer/css/footer.css">
 
         <!-- search Project css -->
-        <link rel="stylesheet" type="text/css" href="../contactUs/CSS/contactUsCSS.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/contactUsCSS.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Jquery cdn -->
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     </head>
 
     <body>
-
         <header>
-            <img src="../images/logo.jpg" alt="PEWA" class="logo">
-            <div class="mainHeader">
-                <h1 class="mainHeading">PEWA</h1>
-            </div>
-            <div>
-                <nav>
-                    <div class="headerMenu">
-                        <a href="#" class="headerMenuItem">Overview</a>
-                        <a href="#" class="headerMenuItem">List</a>
-                        <a href="#" class="headerMenuItem headerMenuItem_visited">Board</a>
-                        <a href="#" class="headerMenuItem">Timeline</a>
-                        <a href="#" class="headerMenuItem">Calender</a>
-                        <a href="#" class="headerMenuItem">Dashboard</a>
-                        <a href="#" class="headerMenuItem">Messages</a>
-                        <a href="#" class="headerMenuItem">More...</a>
-                        <div class="push search"><img alt="PEWA" src="../images/search_icon.png"></div>
-                    </div>
-                </nav>
+            <div class="grid_header">
+                <div class="grid-hdr-item">
+                    <img src="../images/logo.jpg" alt="PEWA" class="logo">
+                </div>
+                <div class="grid-hdr-item">
+                    <h1 class="mainHeading">PEWA</h1>
+                </div>
+                <div class="grid-hdr-search-item">
+                    <input type="text" class="search_txt" placeholder="Search..">
+                </div>
             </div>
         </header>
-        <br>
-            <main>
-                <div id="contactUsForm">
-                    <form>
-                        
-                    </form>
+
+        <div id="mySidenav" class="sidenav">
+            <div class="grid_header">
+                <div class="grid-hdr-item">
+                    <img src="../images/logo.jpg" alt="PEWA" class="logo">
                 </div>
-            </main>
-            <div class="footer-dark">
-                <footer>
-                    <div class="grid-container">
-                        <div class="grid-item_ftr">
-                            <p class="useful_info">Useful Info</p>
-                            <ul>
-                                <li><a href="#">Web design</a></li>
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Hosting</a></li>
-                            </ul>
+                <div class="grid-hdr-item">
+                    <h1 class="mainHeading">PEWA</h1>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../tasks/lists/index.html">Tasks</a>
+            <a href="../goals/index.html">Goals </a>
+            <a href="../messages/index.html">Inbox </a>
+            <a href="../planning/PlanandSchedule.html">Planning </a>
+            <a href="../logbook/logbook.html">Logs </a>
+            <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
+            <a href="../searchTasks/search_project.html">Search Project </a>
+            <a href="../task_priority/task.html">Allocations </a>
+            <a href="#">Calendar </a>
+            <a href="../contactUs/contactUs.html" class="active">Contact us </a>
+            <a href="#" class="signout">Sign out</a>
+        </div>
+
+        <div class="lists">
+                <div class="lists-top">
+                    <div class="avatar">
+                        <img src="../images/rs.webp" alt="Profile Picture" >
+                    </div>
+
+                    <div>
+                        <span id="side_nav" onclick="openNav()">&#9776;</span>
+                    </div>
+                    
+                    <div class="header_tasks">
+                        <span>Contact us</span>
+                    <div>
+                            
+                    <ul class="links">
+                        <li class="header_links"><a href="../lists/index.html">Tasks</a></li>
+                        <li class="header_links"><a href="../goals/index.html">Goals </a></li>
+                        <li class="header_links"><a href="../messages/index.html">Inbox </a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">More</button><i class="fa fa-caret-down"></i>
+                                <div class="dropdown-content">
+                                    <a href="../planning/PlanandSchedule.html">Planning </a>
+                                    <a href="../logbook/logbook.html">Logs </a>
+                                    <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
+                                    <a href="../searchTasks/search_project.html">Search Project </a>
+                                    <a href="../task_priority/task.html">Allocations </a>
+                                    <a href="#">Calendar </a>
+                                    <a href="../contactUs/contactUs.html" class="active">Contact us </a>
+                                </div>
+                              </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <main>
+            <div class="container">
+                <span class="big-circle"></span>
+                <div class="form">
+                    <div class="contact-info">
+                        <h3 class="title"> Let's get in Touch!! </h3>
+                        <p class="text">
+                            We're friendly and available to chat. Reach out to us anytime and we'll be happily
+                            answer
+                            your questions.
+                        </p>
+
+                        <div class="info">
+                            <div class="information">
+                                <img src="./images/location.png" class="icon" alt="">
+                                <p> Toronto , ON </p>
+                            </div>
+                            <div class="information">
+                                <img src="./images/email.png" class="icon" alt="">
+                                <p> contactus@pewa.com </p>
+                            </div>
+                            <div class="information">
+                                <img src="./images/phone.png" class="icon" alt="">
+                                <p> 123-456-7890 </p>
+                            </div>
                         </div>
 
-                        <div class="grid-item_ftr">
-                            <p class="recent_posts">Recent Posts</p>
-                            <ul>
-                                <li><a href="#">Company</a></li>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Careers</a></li>
-                            </ul>
-                        </div>
-                        <div class="grid-item_ftr">
-                            <p class="review">Review</p>
-                            <p class="review_txt">PEWA is an abbreviation of Project Estimation and Work Allocation. It
-                                is
-                                an online tool for Project Management. It combines all the features that are required to
-                                manage a project.</p>
+                        <div class="social-media">
+                            <p> Connect with Us : </p>
+                            <div class="social-icons">
+
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                    <p class="copyright">PEWA © 2022-23</p>
-                </footer>
-            </div>
-            <!-- JavaScript for search projects -->
-            <script src="./JS/contactUsJS.js"></script>
-    </body>
 
+                    <div class="contact-form">
+                        <form>
+                            <h3 class="title"> Contact Us </h3>
+
+                            <div class="input-container">
+                                <input type="text" name="name" id="name" class="input" placeholder="Username">
+                            </div>
+
+                            <div class="input-container">
+                                <input type="email" name="email" id="email" class="input" placeholder="Email">
+                            </div>
+
+                            <div class="input-container">
+                                <input type="tel" name="phone" id="phone" class="input" placeholder="Phone">
+                            </div>
+
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input" placeholder="Message"></textarea>
+                            </div>
+                            <button type="button" onclick="validateData()" class="btn">Submit</button>
+                            <!-- <input type="submit" onclick="validateData();"/> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="footer-dark">
+            <footer>
+                <div class="grid-container_ftr">
+                    <div class="grid-item_ftr">
+                        <p class="useful_info">Useful Info</p>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item_ftr">
+                        <p class="recent_posts">Recent Posts</p>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-item_ftr">
+                        <p class="review">Review</p>
+                        <p class="review_txt">PEWA is an abbreviation of Project Estimation and Work Allocation. It
+                            is
+                            an online tool for Project Management. It combines all the features that are required to
+                            manage a project.</p>
+                    </div>
+                </div>
+                <p class="copyright">PEWA © 2022-23</p>
+            </footer>
+        </div>
+    </div>
+        <!-- JavaScript for search projects -->
+        <script src="./JS/contactUsJS.js"></script>
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+                document.getElementById("chat-input-txtarea").value = " ";
+                document.getElementById("chat-input-id").value = " ";
+                document.getElementById("textarea-input-id").value = " ";
+                document.getElementById("myForm").style.display = "none";
+            }
+    
+            function minForm() {
+                document.getElementById('myForm').style.cssText = 'margin-bottom: -100px;';
+            }
+        </script>
+    
+        <!-- Message validate JS -->
+        <script src="../messages/JS/main.js"></script>
+    
+        <!-- Sidebar JS -->
+        <script src="../sidebar/JS/main.js"></script>
+    </body>
 </html>

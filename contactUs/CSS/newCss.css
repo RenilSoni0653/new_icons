@@ -18,14 +18,14 @@ textarea {
     width: 60%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 3.3);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-form {
-    background-color: #A9A9A9;
+    background-color: #B6B6B4;
     position: relative;
 }
 
@@ -71,7 +71,7 @@ textarea.input {
     background-color: #fff;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
-    color: #A9A9A9;
+    color: #B6B6B4;
     line-height: 1;
     border-radius: 25px;
     outline: none;
@@ -90,7 +90,7 @@ textarea.input {
 }
 
 .contact-info .title {
-    color: #A9A9A9;
+    color: #B6B6B4;
 }
 
 .text {
@@ -128,7 +128,7 @@ textarea.input {
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: #A9A9A9;
+    background: #B6B6B4;
     color: #fff;
     text-align: center;
     line-height: 35px;
