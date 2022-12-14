@@ -32,9 +32,6 @@
         <!-- Dropdown css -->
         <link rel="stylesheet" type="text/css" href="../dropdown/css/main.css">
 
-        <!-- Messages css -->
-        <link rel="stylesheet" type="text/css" href="../messages/css/index.css">
-
         <!-- icon-css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -79,48 +76,42 @@
             </div>
     
             <div class="lists">
-                    <div class="lists-top">
-                        <div class="avatar">
-                            <img src="../images/rs.webp" alt="Profile Picture">
-                        </div>
-                        <div>
-                            <span id="side_nav" onclick="openNav()">&#9776;</span>
-                        </div>
-                        <div class="header_tasks">
-                            <span>Projects</span>
-                        <div>
-                        <ul class="links">
-                            <li class="header_links"><a href="../tasks/lists/index.html">Tasks</a></li>
-                            <li class="header_links"><a href="../goals/index.html">Goals </a></li>
-                            <li class="header_links"><a href="../messages/index.html">Inbox </a></li>
-                            <li>
-                                <div class="dropdown">
-                                    <button class="dropbtn">More</button><i class="fa fa-caret-down"></i>
-                                    <div class="dropdown-content">
-                                        <a href="../planning/PlanandSchedule.html">Planning </a>
-                                        <a href="../logbook/logbook.html">Logs </a>
-                                        <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
-                                        <a href="../searchTasks/search_project.html"  class="active">Search Project </a>
-                                        <a href="../task_priority/task.html">Allocations </a>
-                                        <a href="#">Calendar </a>
-                                        <a href="../contactUs/contactUs.html">Contact us </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="lists-top">
+                    <div class="avatar">
+                        <img src="../images/rs.webp" alt="Profile Picture">
                     </div>
+                    <div>
+                        <span id="side_nav" onclick="openNav()">&#9776;</span>
+                    </div>
+                    <div class="header_tasks">
+                        <span>Projects</span>
+                    <div>
+                    <ul class="links">
+                        <li class="header_links"><a href="../tasks/lists/index.html">Tasks</a></li>
+                        <li class="header_links"><a href="../goals/index.html">Goals </a></li>
+                        <li class="header_links"><a href="../messages/index.html">Inbox </a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">More</button><i class="fa fa-caret-down"></i>
+                                <div class="dropdown-content">
+                                    <a href="../planning/PlanandSchedule.html">Planning </a>
+                                    <a href="../logbook/logbook.html">Logs </a>
+                                    <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
+                                    <a href="../searchTasks/search_project.html"  class="active">Search Project </a>
+                                    <a href="../task_priority/task.html">Allocations </a>
+                                    <a href="#">Calendar </a>
+                                    <a href="../contactUs/contactUs.html">Contact us </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        <br>
+        </div>
         <div id="searchProject">
-            <!-- <input type="text" id="search" onkeyup="searchProject()" placeholder="Search for Projects.."
-                title="Type in a name"> -->
-            <div id="projectList">
-
-            </div>
-            <div class="popup" data-popup="popup-project">
-                <div class="popup-inner">
-
+            <div id="projectList"></div>
+                <div class="popup" data-popup="popup-project">
+                    <div class="popup-inner"></div>
                 </div>
             </div>
         </div>
@@ -186,7 +177,6 @@
             </div>
           </form>
         </div> 
-
         <div class="footer-dark">
             <footer>
                 <div class="grid-container_ftr">
@@ -239,12 +229,11 @@
         <script src="./JS/searchProjectsJS.js"></script>
 
         <!-- Message validate JS -->
-    <script src="../messages/JS/main.js"></script>
+        <script src="../messages/JS/main.js"></script>
 
-    <!-- Sidebar JS -->
-    <script src="../sidebar/JS/main.js"></script>
+        <!-- Sidebar JS -->
+        <script src="../sidebar/JS/main.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    </div>
     </body>
 </html>
