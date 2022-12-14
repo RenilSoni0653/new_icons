@@ -22,6 +22,16 @@ header{
     grid-gap: 7rem;
     padding: 0.2rem;
 }
+
+#err1, #err2, #err3 {
+    margin-left: -180px;
+    color: red;
+}
+
+.frgtLink {
+    margin-top: 30px;
+}
+
 .img{
     display: flex;
     justify-content: flex-end;

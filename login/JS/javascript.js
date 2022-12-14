@@ -22,38 +22,48 @@ const processEntries = () => {
     },
     {
         username:"aditi420@gmail.com",
-      password:"aditi420"
+        password:"aditi420"
+    },
+    {
+      username:"renilsoni@gmail.com",
+      password:"renilsoni"
     }
   ];
-
 
   // check user entries for validity
   let isValid = true;
   if (username.value == '') {
-    username.nextElementSibling.textContent = 'This field is required.';
+    document.getElementById('err1').innerHTML = 'This field is required.';
     isValid = false;
   } else {
-    username.nextElementSibling.textContent = '';
+    document.getElementById('err1').innerHTML = '';
+    isValid = true;
   }
 
   if (password.value == '') {
-    password.nextElementSibling.textContent = 'This field is required.';
+    document.getElementById('err2').innerHTML = 'This field is required.';
     isValid = false;
   } else {
-    password.nextElementSibling.textContent = '';
+    document.getElementById('err2').innerHTML = '';
+    isValid = true;
   }
 
 
-
-
   // submit the form if all fields are valid
+  let count=0;
   if (isValid == true) {
     for(let i=0;i<validLogin.length;i++){
-      if(username.value == validLogin[i].username && password.value == validLogin[i].password){
-        alert("login successfully");
-      }else{
-        alert("Invalid username");
+      if(username.value == validLogin[i].username && password.value == validLogin[i].password) {
+        count=1;
+      } else {
+        count=0;
       }
+    }
+    if(count == 1) {
+      alert("login successfully");
+      window.location="../tasks/lists/index.html";
+    } else {
+      alert("Invalid username or password");
     }
   }
 };

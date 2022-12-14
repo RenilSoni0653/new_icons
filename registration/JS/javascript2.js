@@ -15,33 +15,28 @@ const processEntries = () => {
   // check user entries for validity
   let isValid = true;
   if (username.value == '') {
-    username.nextElementSibling.textContent = 'This field is required.';
+    document.getElementById('err1').innerHTML = 'This field is required.';
     isValid = false;
   } else {
-    username.nextElementSibling.textContent = '';
+    document.getElementById('err1').innerHTML = '';
   }
 
   if (password.value == '') {
-    password.nextElementSibling.textContent = 'This field is required.';
+    document.getElementById('err2').innerHTML = 'This field is required.';
     isValid = false;
   } else {
-    password.nextElementSibling.textContent = '';
+    document.getElementById('err2').innerHTML = '';
   }
 
   if (email.value == '') {
-    email.nextElementSibling.textContent = 'This field is required.';
+    document.getElementById('err3').innerHTML = 'This field is required.';
     isValid = false;
   } else {
-    email.nextElementSibling.textContent = '';
+    document.getElementById('err3').innerHTML = '';
   }
-
-
-
 
   // submit the form if all fields are valid
   if (isValid == true) {
-    // $('form').submit();
     alert("Register Successfully");
-
   }
 };

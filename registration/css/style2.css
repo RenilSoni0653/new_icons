@@ -110,6 +110,16 @@ form h2{
     font-size: 18px;
     transition: 0.3s;
 }
+
+#err1, #err2, #err3 {
+    margin-left: -180px;
+    color: red;
+}
+
+.loginLink {
+    margin-top: 30px;
+}
+
 .input{
     position: absolute;
     width: 100%;
