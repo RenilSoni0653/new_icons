@@ -1,29 +1,3 @@
-/* function showprojectList() {
-    let projectList = "";
-    document.getElementById("projectList").innerHTML = "";
-    tasks.forEach(
-        (task) => (projectList += `<li>${task}</li>`)
-    );
-    document.getElementById("projectList").innerHTML =  projectList;
-}
- */
-/* function myFunction() {
-    var input, filter;
-    input = document.getElementById("myInput");
-    filter = input.value.toLowerCase();
-    tasks.forEach(task => {
-        console.log(task);
-        if(!task.toLowerCase().includes(filter)){
-            console.log("inn");
-            tasks.splice(tasks.findIndex(task),1);
-         }else if(tasksCopy.includes(filter) || !task.toLowerCase().includes(filter)){
-            tasks.push(task);
-            console.log("22"+!task.toLowerCase().includes(filter));
-        }
-    });
-    showprojectList();
-} */
-
 $(document).ready(function () {
     $.getJSON("../searchTasks/JSON/projects.json", function (data) {
         let html = '';

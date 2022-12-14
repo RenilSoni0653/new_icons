@@ -4,15 +4,6 @@ body {
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: white;
-} */
-    /*display: flex;
-    align-items: baseline;
-    justify-content: center;
-    min-height: 100vh;
-} */
-
 #pln_myTable {
     width: 50%;
 }
@@ -23,7 +14,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.854); */
 }
 
 table td button:hover{
@@ -49,7 +39,6 @@ table td button:hover{
 @media only screen and (min-width:1008px) {
     .content-body {
         width: 800px;
-        /* margin-right: 500px; */
         height: 100%;
         border-radius: 20px;
         background-color: white;
@@ -58,7 +47,6 @@ table td button:hover{
     .details {
         width: 500px;
         height: 100%;
-        /* margin-right: 100px; */
         border-radius: 20px;
         background-color: white;
         padding: 2%;
@@ -120,7 +108,6 @@ table td button:hover{
 @media only screen and (max-width: 645px) {
     .content-body {
         width: 300px;
-        /* margin-right: 500px; */
         height: 100%;
         border-radius: 20px;
         background-color: white;
@@ -129,7 +116,6 @@ table td button:hover{
     .details {
         width: 500px;
         height: 100%;
-        /* margin-right: 100px; */
         border-radius: 20px;
         background-color: white;
         padding: 2%;

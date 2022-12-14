@@ -1,24 +1,5 @@
-// const inputs = document.querySelectorAll('.input');
-
-// function focusFunc(){
-//     let parent = this.parentNode.parentNode;
-//     parent.classList.add('focus');
-// }
-
-// function blurFunc(){
-//     let parent = this.parentNode.parentNode;
-//     if(this.value == ""){
-//         parent.classList.remove('focus');
-//     }
-// }
-
-// inputs.forEach(input => {
-//     input.addEventListener('focus', focusFunc);
-//     input.addEventListener('blur', blurFunc);
-// });
-
-
 const loginForm = document.querySelector('#loginForm');
+
 if(document.querySelector('#loginForm') != null){
 loginForm.addEventListener('submit',(e)=>{
   e.preventDefault();
@@ -67,12 +48,8 @@ const processEntries = () => {
 
   // submit the form if all fields are valid
   if (isValid == true) {
-    // $('form').submit();
-    // alert("Login Successfully");
-
     for(let i=0;i<validLogin.length;i++){
       if(username.value == validLogin[i].username && password.value == validLogin[i].password){
-        // location.href = 'homepage.html';
         alert("login successfully");
       }else{
         alert("Invalid username");

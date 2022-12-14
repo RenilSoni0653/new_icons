@@ -172,7 +172,6 @@ label{
     width: 290px
   }
   .addNewLog {
-    /* padding: .75rem 1.5rem; */
     margin-top: 10px;
     margin-right: 100px;
   }
@@ -183,7 +182,6 @@ label{
     margin-left: 100px;
   }
   .commentbtn{
-    /* padding: .75rem 1.5rem; */
     margin-top: 10px;
     margin-left: 30px;
   }
