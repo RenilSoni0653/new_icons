@@ -26,6 +26,7 @@ body {
 .taskStatus {
     color: black;
     font-weight: bolder;
+    margin: 0px;
 }
 
 .task p {
@@ -59,13 +60,13 @@ body {
 
     .subHeading {
         display: flex;
-        height: 35px;
+        height: 10px;
         text-align: center;
     }
 
     .subHeading>* {
         flex: 1 1 0;
-        margin-right: 45px;
+        margin-right: 55px;
     }
 
     .box {
@@ -77,6 +78,7 @@ body {
     .push {
         text-align: center;
         margin-left: auto;
+        padding-right: 5px;
     }
 
     main img {
@@ -109,6 +111,10 @@ body {
         margin-left: 155px;
         margin-top: 10px;
         height: 20px;
+    }
+
+    .fa{
+        color: black;
     }
 
 
