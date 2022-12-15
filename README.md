@@ -31,13 +31,24 @@
 
 - [x] Responsive Layout with  HTML and CSS for second project feature
 - [x] Layout with  HTML, CSS and javascript  for one of your project feature
+- [x] Task Priorities has two lists : NEW TASKS and COMPLETED TASKS
 
 ## Challenges
 
+- While accessing JSON data
+- Using javascript and accessing ids
 - While designing layout 
 - While writing javascript
 
 ## Resources
+
+- https://asana.com/
+
+- https://www.w3schools.com/
+
+- https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+- https://www.youtube.com/watch?v=uxf0--uiX0I&ab_channel=TheCodingTrain
 
 - https://semicolon.dev/tutorial/css/flexbox-calendar
 
@@ -78,6 +89,62 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 - Considering more advance from above, I've added JavaScript validation to all forms whenever user enters submit button without entering data into the form.
 - In addition to that, when browser window becomes smaller like mobile all the links are resides in sidebar which only be enable in mobile view.
 - Furthermore, I've added jQuery for dyanmic data viewing in tables.
+
+## Resources
+- W3Schools
+- MDN web docs
+- codepen
+- stackoverflow
+
+
+## Assignment Name: : Project task lists
+
+## Name: Nrup Patel
+
+## Student Number: N01546128
+
+## Tasks
+
+- [x] Create a Log book Page
+- [x] Create a Planning and Scheduling Page
+- [x] Create a Project-Roadmap Page
+
+
+## Leaning curve and challenges
+
+- In the project I have learnt a lot of new things and the majorly it is to make the data have dynamicity. I have achieved it in two pages: Planning and Scheduing , Project Roadmap 
+- In the beginning I took help from the internet onto how to achive the dynamicity of data and how to use the JavaScript functionalities so as to achive the desired working of the pages.
+- In the Planning and Scheduling page I learnt to pass the values to the Dynamic Charts that I have created to display the portion completed of the task and that it has the animatiom which is achived using CSS. Therefore, it was really useful for me to get to know how it is done by integrating HTML, JavaScript and CSS
+- In the LogBook page I got to learn how to dynamically update the data contained inside of the Logbook, which is fetched from the form that contains all the fields that a user has to fill so as to update the prior logbook. I also got to learn about the onclick events and how to call specific functions so as to bring specificity of the desired taks.
+- In the Project Roadmap page I learnt how to use JQuery, data table, Google Visualisation so as to dynamically display the timeline of the entire project onto the year-timeline. In this page I also learnt how to make progress bars, both dynamic and static so as to print the progression that the tasks have come upto. I also got to understand how do we use the array of arrays so as to populate the data into the project-timeline graph.
+
+
+## Assignment Name: : Project task lists
+
+## Name: Jaikumar Anikumar Darji
+
+## Student Number: N01561627
+
+## Tasks
+
+- [x] Create Login page 
+- [x] Create Registration Page 
+- [x] Create Home Page
+- [x] Create Project Estimation Page
+- [x] Adding Validation using JavaScript
+- [x] Printing Estimation of Project
+
+
+
+## Leaning curve and challenges
+
+- When user  try login if username and password entered Incorrect error message will genrate nd if correct username and password entered it will redirect user to home   
+  page.
+- When user leave Any field empty then user is not allowed to go further.
+- To get data from textbox and show the estimation of making project. 
+- In Project Estimation in Fields if fields accept text value it will not allow user to enter numeric value and same applies to numeric fields. 
+
+ 
 
 ## Resources
 - W3Schools

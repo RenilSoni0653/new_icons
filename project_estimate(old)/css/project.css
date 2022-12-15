@@ -63,23 +63,3 @@ button.btn:hover{
 .sans {
     font-family: sans-serif;
 }
-
-#result{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 10em;
-}
-
-.part1, .part2{
-    border: 1px solid steelblue;
-}
-
-.part1 p ,.part2 p{
-    font-size: large;
-    font-family: sans-serif;
-    margin: 10px;
-}
-.result-text{
-    color: steelblue;
-}

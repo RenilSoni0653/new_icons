@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Estimation | Project Estimation</title>
-    <!-- common css for header  -->
+    <title>Project Estimation | Home</title>
+    <!-- common css  -->
     <link rel="stylesheet" href="css/common.css">
-    <!-- project css  -->
-    <link rel="stylesheet" href="css/project.css">
-
+    <!-- home css  -->
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -20,11 +19,11 @@
                 <img src="images/logo.jpg" alt="" class="logo px10">
                 <h1 class="title">PEWA</h1>
             </div>
-            <div class="d-flex align-center sans">
-                <ul class="d-flex links">
-                    <li><a href="index.html">Home</a></li>
+            <div class="d-flex align-center">
+                <ul class="d-flex links sans">
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#" class="active">Project Estimation</a></li>
+                    <li><a href="project_estimation.html">Project Estimation</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Login</a></li>
 
@@ -37,55 +36,22 @@
         </div>
     </header>
 
-    <div id="project">
-        <div class="form-container">
-            <form id="form">
-                <h1 class="text-center title2 sans">
-                    PROJECT ESTIMATION
-                </h1>
-            <div class="input-container">
-                <label for="name">Project Name</label>
-                <input type="text" class="input" id="name" placeholder="Project Name" >
-            </div>
-            <div class="input-container">
-                <label for="projectCost">Total cost of Project:</label>
-                <input type="text" class="input" id="projectCost" placeholder="Total cost of Project" >
-            </div>
-            <div class="input-container">
-                <label for="time">Required Time (Time consumed by project)</label>
-                <input type="text" class="input" id="time" placeholder="Required Time" >
-            </div>
-            <div class="input-container">
-                <label for="labour">Labour</label>
-                <input type="text" class="input" id="labour" placeholder="Labour" >
-            </div>
-            <div class="input-container">
-                <label for="labourCost">Labour Cost</label>
-                <input type="number" class="input" id="labourCost" placeholder="Labour Cost" >
-            </div>
-            <div class="input-container">
-                <label for="CompletionDate">Completion Date</label>
-                <input type="text" class="input" id="CompletionDate" placeholder="Completion Date" >
-            </div>
-            <div class="btnContainer">
-                <button class="btn"  id="submit" type="submit" >SUBMIT </button>
-            <button class="btn" type="reset" >RESET</button>
-            </div>
-            
-            </form>
-
+    <div id="home">
+        <div class="div">
+            <img src="images/rs.webp" alt="" class="home-img">
         </div>
     </div>
-
-    <div class="extra">
-        <h1 class="text-center result-text">RESULT</h1>
-        <div id="result">
-            <div class="part1">
-            </div>
-            <div class="part2">
-            </div>
-        </div>
+    <div class="part mt30 d-flex flex-column">
+        <h2 class="mt10 text-center">My Tasks</h2>
+        <ul class="links text-center">
+            <li class="header_links"><a href="" class="active">Lists</a></li>
+            <li class="header_links"><a href="#">Calendar </a></li>
+            <li class="header_links"><a href="#">Files </a></li>
+            <li class="header_links"><a href="">Goals </a></li>
+            <li class="header_links"><a href="">Inbox </a></li>
+        </ul>
     </div>
+
     <footer>
         <div class="d-flex justify-btwn p10 footerContainer">
             <div class="d1 p10">
@@ -98,7 +64,7 @@
                     Management. It
                     combines all the features that are required to manage a project.
                 </p>
-    
+
             </div>
             <div class="d2 p10">
                 <h3 class="mt30 text-center">Usedful Info.</h3>
@@ -116,16 +82,12 @@
                     <li><a href="">Careers</a></li>
                 </ul>
             </div>
-    
+
         </div>
         <hr class="footer-hr">
         <p class="text-center"><a href="index.html">PEWA</a> © 2022-23</p>
     </footer>
-    <script src="js/project.js"></script>
-
-    <script>
-        
-    </script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
