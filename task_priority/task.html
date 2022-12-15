@@ -61,7 +61,6 @@
             <a href="../messages/index.html">Inbox </a>
             <a href="../planning/PlanandSchedule.html">Planning </a>
             <a href="../logbook/logbook.html">Logs </a>
-            <a href="../roadmap/roadmap.html">Roadmap </a>
             <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
             <a href="../searchTasks/search_project.html">Search Project </a>
             <a href="../task_priority/task.html" class="active">Allocations </a>
@@ -95,12 +94,11 @@
                                 <div class="dropdown-content">
                                     <a href="../planning/PlanandSchedule.html">Planning </a>
                                     <a href="../logbook/logbook.html">Logs </a>
-                                    <a href="../roadmap/roadmap.html">Roadmap </a>
                                     <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
                                     <a href="../searchTasks/search_project.html">Search Project </a>
                                     <a href="../task_priority/task.html" class="active">Allocations </a>
                                     <a href="../project_estimate/project_estimation.html">Project estimation </a>
-                                    <a href="../calendar/calendar.html">Calendar </a>
+                                    <a href="../calendar/calender.html">Calendar </a>
                                     <a href="../contactUs/contactUs.html">Contact us </a>
                                 </div>
                               </div>
@@ -116,7 +114,7 @@
             <div class="newtask">
                 <details>
                     <summary>New Tasks</summary>
-                    <img src="../task_priority/images/pending.png" width="20px" height="20px">
+                    <img src="../task_priority/images/pending.png" rel="pending" alt="pending" width="20px" height="20px">
                     <table id="tasknew">
                     </table>
                 </details>
@@ -125,12 +123,17 @@
             <div class="task_done">
                 <details>
                     <summary id="completed">Completed</summary>
-                    <img src="../task_priority/images/complete.png" width="20px" height="20px">
+                    <img src="../task_priority/images/complete.png" rel="completed" alt="Completed" width="20px" height="20px">
                     <table id="taskdone">
                     </table>
                 </details>
             </div>
 
+            <br><br>
+            <div class="to_do_list">
+                <label>To DO LIST</label><br>
+                <a href="../task_priority/to_do.html"><img src="../task_priority/images/add.png" rel="list" alt="TO-DO LIST" width="20px" height="20px"></a>
+            </div>
         </main>
 
         <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
@@ -199,10 +202,10 @@
             integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            $('#completed').css('background-color','green')
+            $('#completed').css('background-color','lightgrey')
         </script>
 
-        <script src="./details.js"></script>
+        <script src="./js/details.js"></script>
 
         <!--Footer-->
 
