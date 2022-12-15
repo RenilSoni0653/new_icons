@@ -13,20 +13,8 @@ const processEntries = () => {
 
   let validLogin = [
     {
-        username:"nishasoni123@gmail.com",
-      password:"nisha123"
-    },
-    {
-        username:"dharitpatel99@gmail.com",
-      password:"dharit99"
-    },
-    {
-        username:"aditi420@gmail.com",
-        password:"aditi420"
-    },
-    {
-      username:"renilsoni@gmail.com",
-      password:"renilsoni"
+      username:"admin@gmail.com",
+      password:"admin"
     }
   ];
 
