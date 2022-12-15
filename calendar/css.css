@@ -1,5 +1,118 @@
 
-/*header css*/
+/*header css
+html {
+    height: 100%;
+}
+
+body {
+    color: #41AAC3;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(white, #b6c8e0);
+    background-color: #41aac3;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 1%;
+    width: 100px;
+    height: 100px;
+}
+
+.headimg{
+  text-align: right;
+}
+
+.mainHeader {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.mainHeading {
+    font-style: italic;
+    text-shadow: 2px 2px 2px #b6c8e0;
+}
+
+
+.headerMenu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b6c8e0;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.headerMenuItem {
+    float: none;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.headerMenuItem_visited {
+    color: #41aac3;
+}
+
+.headings {
+    margin-top: 30px;
+    margin-left: -17px;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: #993232;
+}
+
+
+@media only screen and (min-width: 760px) {
+
+
+    .headerMenu {
+        display: flex;
+        height: 30px;
+        padding: 10px 0;
+    }
+
+    .headerMenuItem {
+        text-decoration: none;
+        flex: 1;
+        text-align: center;
+        padding: 5px 5px;
+        position: relative;
+        color: white;
+        font-weight: bold;
+    }
+
+    .search {
+        float: left;
+        align-items: center;
+        border-radius: 25px;
+        border: solid black;
+        background: white;
+        padding: auto;
+        width: 200px;
+        height: 25px;
+    }
+
+    .headerMenuItem_visited {
+        color: #41aac3;
+        border-bottom: solid #41aac3;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headerMenu {
+        display: grid;
+        height: auto;
+        float: none;
+    }
+}
+
+*/
 
 
 body {
@@ -138,33 +251,61 @@ header {
   }
 }
 
+/*content css*/
 
-/*Content CSS*/
-table{
-  width: 100%;
+.calendar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-thead th{
-  text-align: left;
+.head-1 {
+    display: flex;
+    flex-grow: 7;
   
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
 }
 
-tbody tr:nth-child(odd) {
-  background-color:rgb(248, 241, 241);
+.day-names {
+    display: flex;
+    flex-grow: 5;
+    background-color: rgb(40, 44, 46);
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
 }
 
-tbody td{
-  padding: 0.5rem;
-  text-align: left;
-
+.days {
+    display: flex;
+    flex-grow: 88;
+    background-color: rgb(162, 199, 234);
+    border-radius: 5px;
+    color: rgb(7, 36, 64);
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 100px;
+    justify-content: space-evenly;
 }
 
-.task_done{
-  width: max-content;
-}
+.day {
+    display: flex;
+    flex-direction: row;
+    border: 0.5px solid;
+    width: calc(100% * 1/8);
 
-button{
-  border-radius: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5px;
 }
 
 

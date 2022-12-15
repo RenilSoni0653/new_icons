@@ -2,18 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./task.css">
+        <title>Tasks</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Allocations</title>
-        <link href="../images/logo.jpg" rel="shortcut icon">
-        
-        <link rel="stylesheet" href="../task_priority/task.css">
-        
+        <link href="../images/favicon_home.png" rel="shortcut icon">
+
         <!-- Messages css -->
         <link rel="stylesheet" type="text/css" href="../messages/css/index.css">
         
         <!-- Main css -->
         <link rel="stylesheet" type="text/css" href="../tasks/lists/css/index.css">
+
+        <!-- Sidebar css -->
+        <link rel="stylesheet" type="text/css" href="../sidebar/css/main.css">
 
         <!-- icon-css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,15 +28,11 @@
 
         <!-- Dropdown css -->
         <link rel="stylesheet" type="text/css" href="../dropdown/css/main.css">
-
-        <!--Side Bar css-->
-        <link rel="stylesheet" type="text/css" href="../sidebar/css/main.css">
     </head>
 
     <body>
         <!--Header-->
         <header>
-          
             <div class="grid_header">
                 <div class="grid-hdr-item">
                     <img src="../images/logo.jpg" alt="PEWA" class="logo">
@@ -46,8 +44,8 @@
                     <input type="text" class="search_txt" placeholder="Search..">
                 </div>
             </div>
-       
-    </header>
+        </header>
+
         <div id="mySidenav" class="sidenav">
             <div class="grid_header">
                 <div class="grid-hdr-item">
@@ -58,24 +56,24 @@
                 </div>
             </div>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../tasks/lists/index.html">Tasks</a>
+            <a href="../tasks/lists/index.html" >Tasks</a>
             <a href="../goals/index.html">Goals </a>
             <a href="../messages/index.html">Inbox </a>
-            <a href="../planning/PlanandSchedule.html">Planning & Scheduling </a>
+            <a href="../planning/PlanandSchedule.html">Planning </a>
             <a href="../logbook/logbook.html">Logs </a>
             <a href="../sprintPlan/sprintPlan.html">Work Sprints </a>
-            <a href="../searchTasks/search_project.html">Search Project</a>
+            <a href="../searchTasks/search_project.html">Search Project </a>
             <a href="../task_priority/task.html" class="active">Allocations </a>
             <a href="../project_estimate/project_estimation.html">Project estimation </a>
-            <a href="#">Calendar </a>
-            <a href="../contactUs/contactUs.html">Contact us</a>
+            <a href="../calendar/calendar.html">Calendar </a>
+            <a href="..//contactUs/contactUs.html">Contact us </a>
             <a href="#" class="signout">Sign out</a>
         </div>
 
         <div class="lists">
                 <div class="lists-top">
                     <div class="avatar">
-                        <img src="../images/rs.webp" alt="Profile Picture">
+                        <img src="../images/rs.webp" alt="Profile Picture" >
                     </div>
 
                     <div>
@@ -83,7 +81,7 @@
                     </div>
                     
                     <div class="header_tasks">
-                        <span>Task Allocations</span>
+                        <span>Allocations</span>
                     <div>
                             
                     <ul class="links">
@@ -100,8 +98,8 @@
                                     <a href="../searchTasks/search_project.html">Search Project </a>
                                     <a href="../task_priority/task.html" class="active">Allocations </a>
                                     <a href="../project_estimate/project_estimation.html">Project estimation </a>
-                                    <a href="#">Calendar </a>
-                                    <a href="../contactUs/contactUs.html">Contact us</a>
+                                    <a href="../calendar/calendar.html">Calendar </a>
+                                    <a href="../contactUs/contactUs.html">Contact us </a>
                                 </div>
                               </div>
                         </li>
@@ -109,11 +107,10 @@
                 </div>
             </div>
         </div>
-
+        </div><br>
         <!--Main Content-->
-        <main>
 
-            <h2>My Tasks Lists</h2>
+        <main>
             <div class="newtask">
                 <details>
                     <summary>New Tasks</summary>
@@ -122,29 +119,16 @@
                     </table>
                 </details>
             </div>
-
+            <br><br>
             <div class="task_done">
                 <details>
-                    <summary>Completed</summary>
+                    <summary id="completed">Completed</summary>
                     <img src="../task_priority/images/complete.png" width="20px" height="20px">
                     <table id="taskdone">
                     </table>
                 </details>
             </div>
 
-            <div class="do_today">
-                <details>
-                    <summary>Do Today</summary>
-                    <img src="../task_priority/images/pending.png" width="20px" height="20px">
-                </details>
-            </div>
-
-            <div class="do_later">
-                <details>   
-                    <summary>Do Later</summary>
-                    <img src="../task_priority/images/pending.png" width="20px" height="20px">
-                </details>
-            </div>
         </main>
 
         <button class="open-button" onclick="openForm()"><i class="fa fa-comment-o"></i></button>
@@ -208,7 +192,16 @@
             </div>
           </form>
         </div> 
-    
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('#completed').css('background-color','green')
+        </script>
+
+        <script src="./details.js"></script>
+
         <!--Footer-->
 
         <div class="footer-dark">
@@ -237,20 +230,10 @@
                 </div>
                 <p class="copyright">PEWA © 2022-23</p>
             </footer>
-            </div>
         </div>
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            $('.task_done').css('background-color','green')
-        </script>
-
-        <script src="../task_priority/js/taskpriority.js"></script>
-
-        <script>
-            function openForm() {
+    <script>
+        function openForm() {
             document.getElementById("myForm").style.display = "block";
         }
         
