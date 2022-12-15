@@ -1,0 +1,65 @@
+
+/* Project Estimation Form */
+
+.form-container{
+    margin: 10px 10em;
+    border: 1px solid white;
+    padding: 10px 50px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 3px solid rgb(146, 194, 235);
+}
+
+.title2{
+    color: rgb(146, 194, 235);
+    margin-bottom: 25px;
+}
+
+.input-container{
+    margin: 20px;
+}
+
+.input-container label{
+    display: block;
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.input-container input{
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid rgb(146, 194, 235);
+}
+.input-container input:hover,.input-container input:active,.input-container input:focus{
+    outline: 1px solid rgb(146, 194, 235);
+    border: 1px solid rgb(146, 194, 235);
+    box-shadow: 0 0 10px rgb(146, 194, 235);
+}
+
+.btnContainer{
+    margin: 0px 16px;
+}
+button.btn{
+    padding: 6px 15px;
+    background-color: rgb(70, 136, 194);
+    border: 1px solid rgb(146, 194, 235);
+    color: aliceblue;
+    border-radius: 8px;
+    width: 100%;
+    margin: 6px 0px;
+    letter-spacing: 3px;
+    transition: all 0.6s;
+
+}
+
+button.btn:hover{
+    /* background-color: white;
+    border: 1px solid rgb(70, 136, 194);
+    color:rgb(70, 136, 194) */
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+.sans {
+    font-family: sans-serif;
+}

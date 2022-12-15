@@ -1,0 +1,14 @@
+
+/* home */
+#home{
+    width: 100%;
+}
+
+.home-img{
+    width: 100%;
+    background-size:cover;
+}
+
+.sans{
+    font-family: sans-serif;
+}
