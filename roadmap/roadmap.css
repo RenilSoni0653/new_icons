@@ -1,0 +1,293 @@
+*{
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size:16px;
+  font-weight: normal;
+}
+
+a{
+  color:#2727ff !important;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  text-align: center;
+}
+
+#timeline-container {
+  position: static;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#changelog-container {
+  width: 80%;
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+hr{
+  width:80%;
+  margin:0 auto;
+  border:none;
+  border-top:#CCC 1px solid;
+}
+
+.bottom{
+  text-align:center;
+  color:#666;
+  font-size:14px;
+}
+
+#changelog-container .commit .commit-date{
+  font-size:12px;
+  color:#666;
+}
+
+#changelog-container .commit .commit-date:before{
+  content:'—';
+  margin:0 5px;
+}
+
+#changelog-container .commit .commit-desc{
+  display:block;
+  font-size:14px;
+  margin-top:7px;
+}
+
+#changelog-container .commit.expanded .commit-date{
+  margin-top:7px;
+  display: inline-block;
+}
+
+#changelog-container .commit.expanded .commit-date:before{
+  display:none;
+}
+
+#timeline-container rect {
+  transition: height .5s ease-out;
+}
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+ section.timeline {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+ section.timeline #timeline-container {
+  flex-grow: 1;
+  height:auto;
+}
+ section.timeline h2 {
+  margin-top: 0;
+}
+
+.track-grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5% 0;
+}
+.track-grid-item{
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.taskprogress1{
+  background-color: gray;
+  border-radius: 20px;
+  height: 20px;
+  width: 300px;
+  margin-left: 10%;
+}
+
+.taskprogress2{
+  background-color: gray;
+  border-radius: 20px;
+  height: 20px;
+  width: 300px;
+  margin-left: 10%;
+}
+.taskprogress3{
+  background-color: gray;
+  border-radius: 20px;
+  height: 20px;
+  width: 300px;
+  margin-left: 10%;
+}
+
+.taskprogress1 .progress-done1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: repeating-linear-gradient(to left, #0546e0, #1172f9, #4892f9);
+  box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+.taskprogress2 .progress-done2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: repeating-linear-gradient(to left, #0546e0, #1172f9, #4892f9);
+  box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+.taskprogress3 .progress-done3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: repeating-linear-gradient(to left, #0546e0, #1172f9, #4892f9);
+  box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+
+.inputContainer1{
+  float: right;
+  margin: -3%;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.inputContainer2{
+  float: right;
+  margin: -3%;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.inputContainer3{
+  float: right;
+  margin: -3%;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.roadinp{
+  width: 300px;
+}
+
+.inptask{
+  margin-left: 20%;
+  /* align-items: center; */
+}
+
+#inpformcontainer{
+  margin-top: 50px;
+}
+
+#inpsubmit{
+  width:200px;
+  height: 30px;
+  margin-left: 45%;
+}
+
+.tracktask{
+  margin: 0%;
+  height: 50px;
+}
+
+.trackstaticprogress{
+  /* float: right; */
+  margin-left: 30%;
+  position: relative;
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+}
+.trackstaticprogress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(76, 175, 80, 1) 50%, rgba(50, 222, 132, 1) 100%);
+  transition: width .5s linear;
+}
+
+.subtrack-grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5% 0;
+}
+.subtrack-grid-item{
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.trackstaticprogress{
+  margin-bottom: 20px;
+}
+/* 
+.track-container{
+  height: 20px;
+  border-radius: 20px;
+  background-color: #CCC;
+  position: relative;
+}
+
+.track-container .progress-bar{
+  position: absolute;
+  border-radius: 20px;
+  height: 100%;
+  background-color: aqua;
+}
+
+#play-animation {
+  animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+  0% {width: 0%;}
+  100% {width: 100%;}
+} */

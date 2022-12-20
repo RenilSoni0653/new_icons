@@ -1,0 +1,58 @@
+{
+	"projectsName": [
+		{
+			"id": "1",
+			"name": "College Management System",
+			"dueDate": "24/12/2022",
+			"status": "To Do",
+			"priority": "Low",
+			"logo": "./images/clg_logo.png",
+			"desc": "This is a cloud based educational ERP software that enables HEIs to manage online admission & fees, students' attendance, library books, etc. It can also generate students' performance reports & simplify the hassles of faculty."
+		},
+		{
+			"id": "2",
+			"name": "Document Manager",
+			"dueDate": "09/02/2022",
+			"status": "In progress",
+			"priority": "Low",
+			"logo": "./images/fm_logo.png",
+			"desc": "This product will be used to store, share, track and manage files or documents. Some systems include history tracking where a log of the various versions created and modified by different users is recorded."
+		},
+		{
+			"id": "3",
+			"name": "Discover Law",
+			"dueDate": "12/02/2022",
+			"status": "To Do",
+			"priority": "Medium",
+			"logo": "./images/snm_logo.png",
+			"desc": "Discover Law is a leading business law firm serving public, private and not-for-profit clients across key industries in Canada, the United States and internationally."
+		},
+		{
+			"id": "4",
+			"name": "Sports Stop",
+			"dueDate": "02/04/2022",
+			"status": "Backlog",
+			"priority": "High",
+			"logo": "./images/sports_logo.png",
+			"desc": "The Sports Stop delivers powerful stories and smart analysis that bring sports fans closer to the heart of the game. From breaking news and live commentary."
+		},
+		{
+			"id": "5",
+			"name": "Student Management System",
+			"dueDate": "01/12/2022",
+			"status": "In progress",
+			"priority": "Medium",
+			"logo": "./images/sms_logo.png",
+			"desc": "A student management system (also known as a student information system or SIS) helps a school manage data, communications, and scheduling. A school system generates and uses a large amount of data. This data must be communicated appropriately to students, faculty, and parents."
+		},
+		{
+			"id": "6",
+			"name": "PEWA",
+			"dueDate": "01/12/2022",
+			"status": "Backlog",
+			"priority": "Low",
+			"logo": "./images/logo.jpg",
+			"desc": "PEWA is an abbreviation of Project Estimation and Work Allocation. It is an online tool for Project Management. It combines all the features that are required to manage a project."
+		}
+	]
+}
